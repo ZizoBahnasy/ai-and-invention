@@ -1,0 +1,16 @@
+Level 1 (Top-level Sections) breadth: 9, tokens: 49
+Level 2 max breadth: 38 under 'PERFORMING OPERATIONS; TRANSPORTING..., tokens: 260
+Level 3 max breadth: 19 under 'VEHICLES IN GENERAL..., tokens: 499
+Level 4 max breadth: 274 under 'TECHNICAL SUBJECTS COVERED BY FORMER USPC CROSS-RE..., tokens: 1097
+Level 5 max breadth: 445 under 'Indexing scheme relating to selecting arrangements..., tokens: 1576
+Level 6 max breadth: 366 under 'Indexing scheme relating to differential amplifier..., tokens: 5015
+Level 7 max breadth: 571 under 'Measurements..., tokens: 3832
+Level 8 max breadth: 32 under 'using a combination of several amplifiers..., tokens: 496
+Level 9 max breadth: 33 under '{not used}..., tokens: 136
+Level 10 max breadth: 40 under 'III-V..., tokens: 164
+Level 11 max breadth: 58 under '{Control methods or devices therefor, e.g. driver ..., tokens: 313
+Level 12 max breadth: 11 under '{chain containing -COO- or -OCO- groups}..., tokens: 19
+Level 13 max breadth: 14 under 'the principal constituent melting at a temperature..., tokens: 70
+Level 14 max breadth: 14 under 'the principal constituent melting at a temperature..., tokens: 70
+Level 15 max breadth: 14 under 'the principal constituent melting at a temperature..., tokens: 70
+Level 16 max breadth: 14 under 'the principal constituent melting at a temperature..., tokens: 70

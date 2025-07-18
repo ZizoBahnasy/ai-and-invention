@@ -1,0 +1,29 @@
+CPC Hierarchy Permutation Analysis
+===================================
+
+DEEPEST HIERARCHY PATH:
+Path: H > H01 > H01L > H01L21/00 > H01L21/02 > H01L21/04 > H01L21/18 > H01L21/30 > H01L21/31 > H01L21/3205 > H01L21/321 > H01L21/3213 > H01L21/32133 > H01L21/32135 > H01L21/32136 > H01L21/32137
+Depth: 16
+
+DEPTH DISTRIBUTION:
+------------------
+Depth 4: 1,606 leaf nodes (0.86%)
+Depth 5: 29,866 leaf nodes (16.00%)
+Depth 6: 51,196 leaf nodes (27.43%)
+Depth 7: 49,175 leaf nodes (26.35%)
+Depth 8: 27,693 leaf nodes (14.84%)
+Depth 9: 14,109 leaf nodes (7.56%)
+Depth 10: 6,426 leaf nodes (3.44%)
+Depth 11: 2,885 leaf nodes (1.55%)
+Depth 12: 1,087 leaf nodes (0.58%)
+Depth 13: 992 leaf nodes (0.53%)
+Depth 14: 590 leaf nodes (0.32%)
+Depth 15: 404 leaf nodes (0.22%)
+Depth 16: 621 leaf nodes (0.33%)
+
+ALL PERMUTATION STRUCTURES (by frequency):
+-------------------------------------------
+
+Structure (lengths): (1,)
+Count: 186650
+

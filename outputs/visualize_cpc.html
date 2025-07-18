@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CPC Hierarchy Visualization</title>
+    <!-- 1. Import ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; }
+        #main { width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+    <!-- 2. Prepare a DOM element for ECharts -->
+    <div id="main"></div>
+    <script type="text/javascript">
+        // 3. Initialize ECharts instance
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // Show a loading animation while data is being fetched
+        myChart.showLoading();
+
+        // 4. Fetch the data and set the chart options
+        fetch('echarts_data.json')
+            .then(response => response.json())
+            .then(data => {
+                myChart.hideLoading();
+
+                // 5. Specify the chart configuration
+                var option = {
+                    tooltip: {
+                        trigger: 'item',
+                        triggerOn: 'mousemove',
+                        formatter: function (params) {
+                            // Custom tooltip to show original full title
+                            return `<b>${params.data.original_code || params.name}</b><br>${params.data.original_title || ''}`;
+                        }
+                    },
+                    series: [
+                        {
+                            type: 'tree',
+                            data: [data], // The root of our data
+                            top: '5%',
+                            left: '10%',
+                            bottom: '5%',
+                            right: '25%',
+                            symbolSize: 7,
+                            label: {
+                                position: 'left',
+                                verticalAlign: 'middle',
+                                align: 'right',
+                                fontSize: 9
+                            },
+                            leaves: {
+                                label: {
+                                    position: 'right',
+                                    verticalAlign: 'middle',
+                                    align: 'left'
+                                }
+                            },
+                            emphasis: {
+                                focus: 'descendant'
+                            },
+                            // Enable collapsing/expanding nodes
+                            expandAndCollapse: true,
+                            animationDuration: 550,
+                            animationDurationUpdate: 750,
+                            // Enable zooming and panning
+                            roam: true, 
+                            initialTreeDepth: 2 // Start with only 2 levels expanded
+                        }
+                    ]
+                };
+
+                // 6. Display the chart
+                myChart.setOption(option);
+            })
+            .catch(error => {
+                myChart.hideLoading();
+                console.error('Error loading or parsing JSON data:', error);
+                document.getElementById('main').innerText = 'Error: Could not load echarts_data.json. Please ensure the file is in the same directory and the previous Python script ran successfully.';
+            });
+            
+        // Optional: Make the chart responsive to window size changes
+        window.addEventListener('resize', function () {
+            myChart.resize();
+        });
+    </script>
+</body>
+</html>

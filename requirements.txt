@@ -1,0 +1,10 @@
+pandas
+matplotlib
+numpy
+scipy
+graphviz
+echarts-countries-pypkg
+echarts-china-provinces-pypkg
+echarts-china-cities-pypkg
+pyecharts
+pathlib
