@@ -13,5 +13,5 @@ Here are some examples of how the assistant might classify the scenario:
 
 What is the answer? You MUST provide an option exactly as written above. If both options apply, choose the single-most pertinent one. Do not return an answer except one of the options presented above.
 
-Assistant: Sure, the answer to the question is: <answer>
+Assistant: 
 """
