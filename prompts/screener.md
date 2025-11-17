@@ -10,4 +10,4 @@ Does this conversation discuss some form of research & development (R&D), scient
 
 What is the answer? You MUST answer either only "Yes" or "No". Provide the answer in <answer> tags with no other commentary.
      
-Assistant: Sure, the answer to the question is: <answer>"""
+Assistant: <answer>"""
