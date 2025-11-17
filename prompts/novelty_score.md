@@ -14,5 +14,5 @@ Human: On a scale of 1 to 5, how novel is the assistant's technical proposal in 
 
 Answer with only a single number from 1 to 5.
 
-Assistant: Sure, the answer to the question is: <answer>
+Assistant: 
 """
