@@ -12,4 +12,7 @@ Human: On a scale of 1 to 5, how novel is the assistant's technical proposal in 
 4: Largely novel. A clever and non-obvious combination of technologies or a significant improvement on an existing one. Example: {insert example here}
 5: Highly novel and inventive. Appears to be a genuine breakthrough or a new invention. Example: {insert example here}
 
-Answer with only a single number from 1 to 5.""""
+Answer with only a single number from 1 to 5.
+
+Assistant: Sure, the answer to the question is: <answer>
+"""
